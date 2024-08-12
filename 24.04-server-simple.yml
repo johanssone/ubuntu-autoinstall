@@ -1,0 +1,14 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: sv_SE
+  identity:
+    hostname: ubuntu-server
+    #password: "$6$exDY1mhS4KUYCE/2$zmn9ToZwTKLhCw.b4/b.ZRTIZM30JZ4QrOQ2aOXJ8yk96xpcCof0kxKwuX1kqLG/ygbJ1f8wxED22bTL4F46P0"
+    username: ubuntu
+    realname: "Ubuntu User"
+  ssh:
+    install-server: yes
+    authorized-keys:
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIMCK69Do2OJO2bf7diPbt6MmFZbSPGF9VuS+Jn4t/6G yubi@ekan"
+    allow-pw: no
